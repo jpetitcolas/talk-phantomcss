@@ -19,6 +19,14 @@ phantomcss.init({
 casper
     .start(url)
     .then(function() {
+        var Date = function () {
+            return {
+                toString: function() {
+                    return 'Sun Sep 15 2013 10:28:50 GMT+0200 (Romance Daylight Time)';
+                }
+            }
+        }
+
         phantomcss.screenshot('.coming_soon', 'coming-soon-page');
     })
     .then(function() {
