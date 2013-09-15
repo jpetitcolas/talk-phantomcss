@@ -1,40 +1,22 @@
-<HTML>
-    <HEAD>
-        <TITLE>Coming soon...</TITLE>
-    </HEAD>
-    <BODY height=100% bgcolor=white>
-        <TABLE width=100% height=100%>
-            <TR>
-                <TD width=100% height=100% align=center valign=center>
-                    <TABLE class=coming_soon>
-                        <TR align=center>
-                            <TD align=center>
-                                <IMG src=img/hammer.gif></IMG>
-                            </TD>
-                        </TR>
-                        <TR align=center valign=center>
-                            <TD><FONT size=7 color=red>Coming soon</FONT></p></TD>
-                        </TR>
-                        <TR>
-                            <TD align=center><FONT size=5>Our website is currently under construction.</FONT></TD>
-                        </TR>
-                        <TR>
-                            <TD align=center>
-                                <BR><BR>
-                                <FONT size=4>
-                                    <script type=text/javascript>document.write((new Date()).toString().split(' ').splice(1,4).join(' '));</script>
-                                </FONT>
-                            </TD>
-                        </TR>
-                    </TABLE>
-                </TD>
-            </TR>
-            <TR cellpadding=50>
-                <TD align=center>
-                    <BR><BR><BR>
-                    <FONT size=2 color=#666>Website proudly created by <A href=#>FrontWeaver MX Gurus</A> - &copy; 1991 All rights reserved</FONT>
-                </TD>
-            </TR>
-        </TABLE>
-    </BODY>
-</HTML>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coming soon...</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div class="coming_soon">
+        <img src="img/hammer.gif" alt="Under construction..." title="Under construction..." />
+        <h3>Coming soon</h3>
+        <p>Our website is currently under construction.</p>
+        <p class="date" id="date"></p>
+    </div>
+    <footer>
+        <p>Website proudly created by <A href=#>FrontWeaver MX Gurus</A> - &copy; 1991 All rights reserved</p>
+    </footer>
+    <script>
+        document.getElementById("date").innerText = new Date().toString().split(' ').splice(1,4).join(' ');
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body {
+    background: #fff;
+    font-family: Arial;
+    margin: 0;
+}
+
+.coming_soon {
+    text-align: center;
+    width: 500px;
+    margin: 100px auto;
+}
+
+h3 {
+    margin: 0;
+    color: red;
+    font-size: 46px;
+    font-weight: normal;
+    margin: 2px 0 25px -9px;
+}
+
+p {
+    font-size: 24px;
+    margin-left: 6px;
+}
+
+.date {
+    font-size: 14px;
+}
+
+footer {
+    position: absolute;
+    bottom: 40px;
+    width: 500px;
+    margin-left: 50%;
+    left: -250px;
+}
+
+footer p {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
